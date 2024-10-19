@@ -35,6 +35,15 @@ a[href="/shop"] {
     display: none;
 }
 
+/********************************
+ * HIDE THINGS IN THE TOP RIGHT *
+ ********************************/
+
+/* Hide help button */
+a[href="https://support.discord.com"]  {
+    display: none;
+}
+
 /**********************************************
  * HIDE THINGS IN THE REGULAR MESSAGE SECTION *
  **********************************************/

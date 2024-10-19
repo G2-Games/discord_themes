@@ -9,3 +9,4 @@ Hides:
 - Shop button in menu above DMs
 - Reaction suggestions when hovering over a message
 - Discover button in server sidebar
+- Help button in the top right
