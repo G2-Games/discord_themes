@@ -55,13 +55,12 @@ div[class*="popoverReactionHoverBar"] div[aria-label^="Click to react with"],
  *************************************/
 
 /* Hide server sidebar discover button */
-nav[aria-label*="Servers sidebar"] {
-    ul > div[class^="footer"] {
-        height: 0px;
+ul[data-list-id*="guildsnav"] {
+    div[class^="footer"] {
         display: none;
     }
 
-    ul > div[class^="unreadMentionsIndicatorBottom"] {
+    div[class^="unreadMentionsIndicatorBottom"] {
         bottom: 0;
     }
 }
