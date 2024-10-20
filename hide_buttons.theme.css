@@ -7,10 +7,6 @@
  * @website https://g2games.dev
 **/
 
-/**********************************
- * HIDE THINGS IN THE MESSAGE BAR *
- **********************************/
-
 /* Hide Nitro gift button */
 button[aria-label="Send a gift"] {
     display: none;
@@ -26,18 +22,10 @@ button[aria-label="Apps"] {
     display: none;
 }
 
-/*******************************
- * HIDE THINGS IN THE TOP LEFT *
- *******************************/
-
 /* Hide shop button */
 a[href="/shop"] {
     display: none;
 }
-
-/********************************
- * HIDE THINGS IN THE TOP RIGHT *
- ********************************/
 
 /* Hide help button */
 a[href="https://support.discord.com"]  {
@@ -51,11 +39,7 @@ a[href="/store"]  {
     display: inherit; /* Change this to `none` to hide */
 }
 
-/**********************************************
- * HIDE THINGS IN THE REGULAR MESSAGE SECTION *
- **********************************************/
-
-/**
+/*
  * Hide emoji when hovering over a message.
  * This selector hides buttons with labels containing the text below, and the
  * separator between the previous and other buttons
@@ -66,9 +50,15 @@ div[class*="popoverReactionHoverBar"] div[aria-label^="Click to react with"],
     display: none;
 }
 
-/*************************************
- * HIDE THINGS IN THE SERVER SIDEBAR *
- *************************************/
+/* Hide forwarding buttons */
+div[aria-label="Forward"], div#message-forward {
+    display: none;
+}
+
+/* Hide forwarding link on images */
+div[aria-label="Media Viewer Modal"] div[class^="optionsContainer"] div[class*="forward"] {
+    display: none;
+}
 
 /* Hide server sidebar discover button */
 ul[data-list-id*="guildsnav"] {
