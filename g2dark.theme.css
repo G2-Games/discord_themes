@@ -1,0 +1,51 @@
+/**
+ * @name G2 Dark
+ * @version 0.1.0
+ * @author G2_Games
+ * @description A theme based off of the GitHub Dark theme.
+ * @source https://github.com/G2-Games/discord_themes
+ * @donate https://ko-fi.com/g2_games
+ * @website https://g2games.dev
+**/
+
+:root, .theme-dark, .theme-light {
+    --blurple-replace: #7289DA;
+
+    /* Background */
+    --background-primary: rgb(9, 12, 16);
+    --background-secondary: rgb(13, 17, 23);
+    --background-secondary-alt: var(--background-floating);
+    --background-tertiary: rgb(7, 10, 16);
+    --background-floating: #0e1116;
+    --background-nested-floating: var(--background-secondary);
+    --background-accent: rgb(17, 29, 46);
+
+    /* Background Modifier */
+    --background-modifier-accent: rgb(33, 38, 45);
+    --background-modifier-hover: rgba(33, 38, 45, 0.26);
+    --background-modifier-active: rgba(33, 38, 45, 0.44);
+    --background-modifier-selected: rgba(33, 38, 45, 0.52);
+
+    /* Header */
+    --header-primary: rgb(240, 246, 252);
+    --header-secondary: rgb(139, 148, 158);
+
+    /* Interactive */
+    --interactive-normal: var(--header-secondary);
+    --interactive-hover: #dcddde;
+    --interactive-active: #fff;
+    --interactive-muted: rgb(76, 82, 88);
+
+    --text-link: rgb(88, 166, 255);
+    --text-normal: rgb(201, 209, 217);
+    --text-muted: var(--header-secondary);
+
+    --scrollbar-thin-thumb: var(--background-floating);
+    --scrollbar-thin-track: transparent;
+    --scrollbar-auto-thumb: #262c36;
+    --scrollbar-auto-track: #171b21;
+    --scrollbar-auto-scrollbar-color-thumb: var(--background-floating);
+    --scrollbar-auto-scrollbar-color-track: rgba(17, 19, 24, 0.308);
+
+    --channeltextarea-background: var(--background-secondary);
+}
