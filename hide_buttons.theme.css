@@ -1,6 +1,6 @@
 /**
  * @name Hide Buttons
- * @version 1.1.4
+ * @version 1.1.5
  * @author G2_Games
  * @description Remove buttons and stuff that I find annoying.
  * @source https://github.com/G2-Games/discord_themes
@@ -19,7 +19,7 @@ button[aria-label="Open sticker picker"] {
 }
 
 /* Hide Apps button */
-button[aria-label="Apps"] {
+button[aria-label*="Apps"], div[aria-label*="Apps"] {
     display: none;
 }
 
