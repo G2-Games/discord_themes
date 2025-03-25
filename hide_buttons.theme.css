@@ -24,7 +24,7 @@ button[aria-label*="Apps"], div[aria-label*="Apps"] {
 }
 
 /* Hide shop button */
-a[href="/shop"] {
+a[href^="/shop"] {
     display: none;
 }
 
@@ -37,7 +37,7 @@ a[href="https://support.discord.com"]  {
  * pretty important to be able to do
 **/
 a[href="/store"]  {
-    display: inherit; /* Change this to `none` to hide */
+    display: none; /* Change this to `none` to hide */
 }
 
 /*
@@ -46,28 +46,28 @@ a[href="/store"]  {
  * separator between the previous and other buttons
 **/
 div[class*="popoverReactionHoverBar"] div[aria-label^="Click to react with"],
-    div[class*="popoverReactionHoverBar"] div[class^="separator"]
+    div[class*="popoverReactionHoverBar"] div[class^="separator"],
+    div[id*="message-actions-quickreact"]
 {
     display: none;
 }
 
+/* Hide Apps button in message context menu */
+div#message-actions-apps {
+    display: none;
+}
+
+/* Hide Speak Message button */
+div#message-actions-tts {
+    display: none;
+}
+
 /* Hide forwarding buttons */
-div[aria-label="Forward"], div#message-forward {
+div[aria-label="Forward"], div#message-actions-forward {
     display: none;
 }
 
 /* Hide forwarding link on images */
-div[aria-label="Media Viewer Modal"] div[class^="optionsContainer"] div[class*="forward"] {
+div[aria-label="Media Viewer Modal"] button[aria-label*="Forward"] {
     display: none;
-}
-
-/* Hide server sidebar discover button */
-ul[data-list-id*="guildsnav"] {
-    div[class^="footer"] {
-        display: none;
-    }
-
-    div[class^="unreadMentionsIndicatorBottom"] {
-        bottom: 0;
-    }
 }
