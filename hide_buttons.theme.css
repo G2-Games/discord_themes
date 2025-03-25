@@ -14,13 +14,14 @@ button[aria-label="Send a gift"] {
 }
 
 /* Hide sticker picker button */
-button[aria-label="Open sticker picker"] {
+div:has(> button[aria-label="Open sticker picker"]) {
     display: none;
 }
 
 /* Hide Apps button */
 button[aria-label*="Apps"], div[aria-label*="Apps"] {
     display: none;
+    height: 0;
 }
 
 /* Hide shop button */
@@ -40,6 +41,9 @@ a[href="/store"]  {
     display: none; /* Change this to `none` to hide */
 }
 
+
+/***** MESSAGE & MENU STUFF *****/
+
 /*
  * Hide emoji when hovering over a message.
  * This selector hides buttons with labels containing the text below, and the
@@ -52,22 +56,17 @@ div[class*="popoverReactionHoverBar"] div[aria-label^="Click to react with"],
     display: none;
 }
 
-/* Hide Apps button in message context menu */
-div#message-actions-apps {
-    display: none;
-}
-
-/* Hide Speak Message button */
-div#message-actions-tts {
+/* Hide various buttons in the right click context menu */
+div#message-actions-apps, div#message-actions-tts {
     display: none;
 }
 
 /* Hide forwarding buttons */
-div[aria-label="Forward"], div#message-actions-forward {
+div[aria-label*="Forward"], button[aria-label*="Forward"], div#message-actions-forward {
     display: none;
 }
 
-/* Hide forwarding link on images */
-div[aria-label="Media Viewer Modal"] button[aria-label*="Forward"] {
+/* Remove server button things at the bottom of the sidebar */
+ul[data-list-id="guildsnav"] > div:nth-child(2) > div > div:nth-last-child(-n + 3) {
     display: none;
 }
