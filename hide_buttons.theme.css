@@ -1,6 +1,6 @@
 /**
  * @name Hide Buttons
- * @version 1.1.5
+ * @version 2.0.0
  * @author G2_Games
  * @description Remove buttons and stuff that I find annoying.
  * @source https://github.com/G2-Games/discord_themes
@@ -57,16 +57,27 @@ div[class*="popoverReactionHoverBar"] div[aria-label^="Click to react with"],
 }
 
 /* Hide various buttons in the right click context menu */
-div#message-actions-apps, div#message-actions-tts {
+div#message-actions-apps, div#message-actions-tts,
+div#message-tts, div#message-apps{
+    display: none;
+}
+
+/* Remove quick react emoji */
+div:has(> div[id*="message-quickreact"]), div:has(> div[id*="message-actions-quickreact"]) {
     display: none;
 }
 
 /* Hide forwarding buttons */
-div[aria-label*="Forward"], button[aria-label*="Forward"], div#message-actions-forward {
+div[aria-label*="Forward"], button[aria-label*="Forward"], div#message-actions-forward, div#message-forward {
     display: none;
 }
 
 /* Remove server button things at the bottom of the sidebar */
 ul[data-list-id="guildsnav"] > div:nth-child(2) > div > div:nth-last-child(-n + 3) {
+    display: none;
+}
+
+/* Remove separators in message right click menu */
+div[aria-label="Message Actions"] div[role="separator"] {
     display: none;
 }
