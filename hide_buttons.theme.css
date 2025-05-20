@@ -18,9 +18,15 @@ div:has(> button[aria-label="Open sticker picker"]) {
     display: none;
 }
 
-/* Hide Apps button */
+/* Hide Apps button and annoying glow */
 button[aria-label*="Apps"], div[aria-label*="Apps"] {
     display: none;
+    height: 0;
+}
+
+div[class^="appLauncherGlow"] {
+    display: none;
+    width: 0;
     height: 0;
 }
 
