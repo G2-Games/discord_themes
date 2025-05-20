@@ -81,3 +81,15 @@ ul[data-list-id="guildsnav"] > div:nth-child(2) > div > div:nth-last-child(-n + 
 div[aria-label="Message Actions"] div[role="separator"] {
     display: none;
 }
+
+div[id*="channel-context-transfer"] {
+    display: none;
+}
+
+div[id*="channel-context-hide-voice-names"] {
+    display: none;
+}
+
+div[id*="more-settings-context-transfer"] {
+    display: none;
+}
